@@ -1,0 +1,12 @@
+.products-section {
+    max-width: 1200px;      /* Coincide con el breakpoint máximo de las 4 columnas */
+    margin: 0 auto;         /* Centra horizontalmente todo el bloque de la tienda */
+    padding: 2rem 1.5rem;   /* Espaciado interno dinámico */
+}
+
+.products-section h1 {
+    font-size: 2rem;
+    color: var(--text);
+    margin-bottom: 1.5rem;  /* Separación con la cuadrícula inferior */
+    text-align: left;
+}

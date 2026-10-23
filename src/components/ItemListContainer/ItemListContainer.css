@@ -10,3 +10,7 @@
     margin-bottom: 1.5rem;  /* Separación con la cuadrícula inferior */
     text-align: left;
 }
+
+.divider {
+    padding: 32px;
+}

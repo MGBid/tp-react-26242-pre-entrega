@@ -1,0 +1,207 @@
+[
+    {
+        "id": "MCH-001",
+        "name": "Oliver",
+        "title": "Ingeniero de Calefacción de Teclados",
+        "description": "Optimiza el rendimiento de los desarrolladores ocupando el 100% del teclado. Garantiza que las teclas se mantengan a una temperatura óptima de 38°C mediante siestas estratégicas.",
+        "skill": "Presionar F5 en producción de manera accidental.",
+        "price": 15.00,
+        "currency": "Atunes",
+        "image": "/img/kittys/oliver-teclado.jpg",
+        "url": "https://images.pexels.com/photos/35327600/pexels-photo-35327600.jpeg",
+        "category": "Tecnología",
+        "availability": true,
+        "rating": 4.8,
+        "comments": ["Excelente servicio, mi teclado nunca estuvo tan calentito.",
+      "Borró una base de datos entera, pero roncaba tan lindo que lo perdoné."]
+    },
+    {
+        "id": "MCH-002",
+        "name": "Luna",
+        "title": "Especialista en Testeo de Gravedad (QA)",
+        "description": "Control de calidad de la física del entorno. Se encarga de empujar vasos de agua, lápices y adornos desde el borde de las mesas para verificar que las leyes de Newton sigan vigentes.",
+        "skill": "Mirarte fijamente a los ojos mientras tira tus cosas.",
+        "price": 12.00,
+        "currency": "Atunes",
+        "image": "/img/kittys/luna.jpg",
+        "url": "https://images.pexels.com/photos/13620688/pexels-photo-13620688.jpeg",
+        "url2": "https://images.pexels.com/photos/4878345/pexels-photo-4878345.jpeg",
+        "category": "Tecnología",
+        "availability": true,
+        "rating": 4.9,
+        "comments": ["Tiró mi taza favorita de café. La gravedad funciona al 100%, aprobado.",
+      "Es implacable con los lápices en el escritorio."]
+    },
+    {
+        "id": "MCH-003",
+        "name": "Bigotes",
+        "title": "Auditor de Cableado y Punteros Láser",
+        "description": "Inspección minuciosa de la seguridad del cableado detrás del monitor. Especialista en la caza y neutralización de luces rojas misteriosas que amenacen la estabilidad de la oficina.",
+        "skill": "Agilidad cuántica (aparece donde hay un cable moviéndose).",
+        "price": 18.00,
+        "currency": "Atunes",
+        "image": "/img/kittys/bigotes.jpg",
+        "url": "https://media.istockphoto.com/id/1348760195/es/foto/un-gatito-maine-coon-rojo.jpg?b=1&s=612x612&w=0&k=20&c=jaugsN7pAwBrtRvzrwqj9WrTTVXVwq74Qrjh9yzkRFw=",
+        "category": "Tecnología",
+        "availability": false,
+        "rating": 4.9,
+        "comments": ["Se peleó con el cable del router y nos dejó sin internet, pero atrapó al láser."]
+    },
+    {
+    "id": "MCH-004",
+    "name": "Cleo",
+    "title": "Terapeuta de Ronroneo de Alta Frecuencia",
+    "description": "Reducción drástica del estrés laboral. Se posiciona directamente sobre el pecho o el regazo del usuario para emitir vibraciones terapéuticas antiansiedad de entre 20 y 140 Hz.",
+    "skill": "Amasar la ropa (hacer panecitos) con precisión milimétrica.",
+    "price": 25.00,
+    "currency": "Atunes",
+    "image": "/img/kittys/cleo.webp",
+    "url": "https://unsplash.com",
+    "category": "Recursos Humanos",
+    "availability": true,
+    "rating": 5.0,
+    "comments": [
+      "Mejor que un spa. Me quedé dormido a mitad de la jornada laboral.",
+      "Sus panecitos tienen un 10/10 en suavidad."
+    ]
+  },
+  {
+    "id": "MCH-005",
+    "name": "Simba",
+    "title": "Coordinador de Pausas Activas Exigentes",
+    "description": "Obliga al humano a despegar la vista de la pantalla. Implementa métodos disruptivos como maullar sin razón aparente al lado de la silla o correr a máxima velocidad por el pasillo.",
+    "skill": "Parqueo vertical en cortinas de tela.",
+    "price": 10.00,
+    "currency": "Atunes",
+    "image":"/img/kittys/simba.webp",
+    "url": "https://unsplash.com",
+    "category": "Recursos Humanos",
+    "availability": true,
+    "rating": 4.2,
+    "comments": [
+      "Definitivamente me hizo levantar de la silla, principalmente para bajarlo del techo."
+    ]
+  },
+    {
+    "id": "MCH-006",
+    "name": "Garfield",
+    "title": "Consultor Senior en Ergonomía del Descanso",
+    "description": "Demuestra con el ejemplo cómo lograr el equilibrio vida-trabajo. Experto en tomar siestas de 18 horas en las posiciones geométricas más incómodas e imposibles del hogar.",
+    "skill": "Dormir boca arriba con todas las patas estiradas.",
+    "price": 30.00,
+    "currency": "Atunes",
+    "image": "/img/kittys/garfield.webp",    
+    "url": "https://unsplash.com",
+    "category": "Recursos Humanos",
+    "availability": true,
+    "rating": 4.7,
+    "comments": [
+      "Su nivel de flojera es inspirador. Cobró caro pero valió cada segundo de consultoría."
+    ]
+  },
+    {
+    "id": "MCH-007",
+    "name": "Coco",
+    "title": "Inspector de Aduana de Cajas de Cartón",
+    "description": "Control de calidad e inspección obligatoria para cualquier paquete que llegue a las instalaciones. Si la caja califica, procede a confiscarla inmediatamente para certificar su habitabilidad.",
+    "skill": "Entrar en cajas tres veces más pequeñas que su masa corporal.",
+    "price": 14.00,
+    "currency": "Atunes",
+    "image": "/img/kittys/coco.jpg",
+    "urlImagen": "https://unsplash.com",
+    "category": "Operaciones",
+    "availability": true,
+    "rating": 4.6,
+    "comentariosContratistas": [
+      "\"Vació mis compras al piso para meterse en la caja. Excelente profesional.\""
+    ]
+  },
+  {
+    "id": "MCH-008",
+    "name": "Tormenta",
+    "title": "Alarma de Respaldo Irrevocable",
+    "description": "Garantiza que el humano cumpla sus horarios. Si la alarma de tu celular falla, procede a lamerte la nariz, morderte los dedos de los pies o sentarse en tu cara exactamente a la hora del desayuno.",
+    "skill": "Saber la hora exacta del plato lleno sin mirar un reloj.",
+    "price": 20.00,
+    "currency": "Atunes",
+    "image": "/img/kittys/tormenta.jpg",
+    "url": "https://unsplash.com",
+    "category": "Operaciones",
+    "availability": true,
+    "rating": 4.4,
+    "comments": [
+      "No tiene botón de postergar. Me despertó a base de maullidos al oído a las 5 AM."
+    ]
+  },
+  {
+    "id": "MCH-009",
+    "name": "Cazador",
+    "title": "Guardia de Seguridad Anti-Bichos Voladores",
+    "description": "Defensa perimetral táctica contra intrusos voladores no identificados (moscas, polillas o mosquitos). Utiliza saltos acrobáticos para neutralizar amenazas del espacio aéreo.",
+    "skill": "Emitir el tétrico sonido 'ek-ek-ek' cuando avista un objetivo.",
+    "price": 22.00,
+    "currency": "Atunes",
+    "image": "/img/kittys/cazador.jpg",    
+    "url": "https://unsplash.com",
+    "category": "Operaciones",
+    "availability": true,
+    "rating": 4.9,
+    "comments": [
+      "Cazó una polilla gigante en la sala. Un héroe nacional."
+    ]
+  },
+  {
+    "id": "MCH-010",
+    "name": "Duquesa",
+    "title": "Directora de Protocolo y Elegancia de Oficina",
+    "description": "Supervisa que el código de vestimenta e imagen de los humanos sea impecable. Inspecciona trajes negros y abrigos con el único propósito de decorarlos minuciosamente con pelos blancos.",
+    "skill": "Ignorarte olímpicamente cuando la llamas por su nombre.",
+    "price": 28.00,
+    "currency": "Atunes",
+    "image": "/img/kittys/duquesa.jpg",    
+    "url": "https://unsplash.com",
+    "category": "Legales y Relaciones",
+    "availability": true,
+    "rating": 4.3,
+    "comments": [
+      "Dejó mi saco formal lleno de pelos antes de una entrevista. Me dio suerte."
+    ]
+  },
+  {
+    "id": "MCH-011",
+    "name": "Félix",
+    "title": "Asesor Legal de Demanda de Mimos",
+    "description": "Especialista en derecho laboral felino. Presenta mociones urgentes poniéndose panza arriba a mitad del pasillo, demandando atención inmediata por violación al tratado de caricias obligatorias.",
+    "skill": "Activar el modo 'trampa de oso' (morderte si le acaricias la panza por más de 3 segundos).",
+    "price": 19.00,
+    "currency": "Atunes",
+    "image": "/img/kittys/felix.jpg",    
+    "url": "https://unsplash.com",
+    "category": "Legales y Relaciones",
+    "availability": true,
+    "rating": 4.6,
+    "comments": [
+      "Caí en su trampa de la panza. Firmé el acuerdo de paz entregándole un Churu."
+    ]
+  },
+   {
+    "id": "MCH-012",
+    "name": "Salem",
+    "title": "Gerente de Monitoreo de Ventanas y Vecindario",
+    "description": "Vigilancia perimetral continua desde el marco de la ventana principal. Analiza los movimientos sospechosos de palomas, perros de vecinos y repartidores externos durante todo el día.",
+    "skill": "Mantener la misma postura rígida de estatua egipcia por 6 horas.",
+    "price": 16.00,
+    "currency": "Atunes",
+    "image": "/img/kittys/salem.jpg",
+    "url": "/img/kittys/salem.jpg",
+    "category": "Operaciones",
+    "availability": true,
+    "rating": 4.7,
+    "comments": [
+      "Tiene controlado a todo el barrio. Sabe exactamente cuándo llega el cartero."
+    ]
+  }
+  ]
+
+
+

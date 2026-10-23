@@ -5,18 +5,14 @@ import "./Header.css"
 
 export const Header = () => {
     return (
-        <>
         <header>
             <div className="logo-container">
                 <Link to={"/"}>
                     <img src={logo} alt="logo react" />
-                    <span>Reactiva</span>
+                    <span>Staffing Cats 🐾</span>
                 </Link>
             </div>
             <Nav />
         </header>
-
-        </>
     )
-
 }

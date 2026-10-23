@@ -1,0 +1,45 @@
+/* 1. Modificamos el contenedor principal <header> */
+header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 3rem;
+
+    /* Alinea el bloque del logo a la izquierda y la Nav a la derecha */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* 2. Limpiamos el contenedor del logo (ya no necesita flex-direction aquí) */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+/* 3. Quitamos la línea de subrayado del título "Staffing cats" */
+.logo-container a {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    text-decoration: none;
+}
+
+.logo-container img {
+    width: 45px;
+}
+
+.logo-container span {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--text);
+}
+
+/* 4. Media Query para pantallas medianas y grandes (Computadoras) */
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        gap: 0;
+    }
+}

@@ -1,0 +1,79 @@
+/* ==========================================================================
+   1. ESTADOS BASE (Cómo se ve la tarjeta normalmente)
+   ========================================================================== */
+
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 100%;
+    box-sizing: border-box;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    cursor: pointer;
+}
+
+/* Imagen del producto adaptada */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    background-color: var(--border); 
+    transition: filter 0.2s ease;
+}
+
+/* Títulos y textos */
+.card h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--text);
+    margin: 0.5rem 0 0 0;
+    transition: color 0.2s ease;
+}
+
+.card p:nth-of-type(1) {
+    font-size: 0.95rem;
+    color: var(--text);
+    opacity: 0.8;
+    margin: 0;
+    line-height: 1.4;
+    flex-grow: 1;
+}
+
+/* Precio destacado */
+.card p:nth-of-type(2) {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--text);
+    margin: 0.5rem 0 0 0;
+    transition: color 0.2s ease;
+}
+
+
+/* ==========================================================================
+   2. ESTADOS INTERACTIVOS (Efectos al pasar el mouse - HOVER)
+   ========================================================================== */
+
+/* Efecto sobre el contenedor de la tarjeta */
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(255, 115, 0, 0.35);
+    border-color: rgba(255, 115, 0, 0.5);
+}
+
+/* Efecto sobre los elementos internos al hacer hover en la tarjeta */
+.card:hover img {
+    filter: brightness(1.05);
+}
+
+.card:hover h3 {
+    color: #ff7300;
+}
+
+.card:hover p:nth-of-type(2) {
+    color: #ff7300;
+}

@@ -1,0 +1,38 @@
+.products-container {
+    display: grid;
+    /* 1 columna por defecto en celulares */
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* MUY IMPORTANTE: Quitamos el estilo por defecto de los Links que envuelven las tarjetas */
+.products-container > a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+}
+
+/* --- Media Queries Responsivas --- */
+
+/* Tablets (Medianas): 2 tarjetas por fila */
+@media (min-width: 640px) {
+    .products-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Laptops (Grandes): 3 tarjetas por fila */
+@media (min-width: 960px) {
+    .products-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* Computadoras de escritorio: Máximo 4 tarjetas por fila 
+@media (min-width: 1200px) {
+    .products-container {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}*/

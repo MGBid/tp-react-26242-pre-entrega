@@ -1,0 +1,31 @@
+import { useEffect, useState } from "react";
+import { ItemList } from "../ItemList/ItemList";
+import "./ItemListContainer.css";
+
+export const ItemListContainer = () => {
+    const [products, setProducts] = useState([]);
+    const [errors, setErrors] = useState(null);
+    const [loading, setLoading] = useState(true);
+
+    useEffect( () => {
+        fetch("data/products.json")
+        .then(res => {
+            if (!res.ok) {
+                throw new Error("Error al cargar los productos!")
+            }
+            return res.json();
+        })
+        .then(data => setProducts(data))
+        .catch(err => setErrors(err.message))
+        .finally( () => setLoading(false));
+    }, [])
+
+    if(loading) return <p>Cargando...</p>
+    if(errors) return <p>{errors}</p>
+
+    return <section>
+        <h1>Nuestro Staff</h1>
+        <div className="divider"></div>
+        <ItemList products={products} />
+    </section>
+}

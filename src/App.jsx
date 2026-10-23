@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header/Header';
 import { Footer } from './components/Footer/Footer';
+import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
 
 import './App.css'
 
@@ -11,7 +12,10 @@ function App() {
     <Header />
     <main>
       <Routes>
-        <Route path="/" element={<h1>Bienvenida</h1>} />
+        <Route path='/' element={<ItemListContainer />} />
+        <Route path='/cart' element={<h1>Carrito</h1>} />
+        <Route path='/mision-vision' element={<h1>Misión & Visión</h1>} />
+        <Route path='/about-us' element={<h1>Quienes Somos</h1>} />
       </Routes>
     </main>
     <Footer />

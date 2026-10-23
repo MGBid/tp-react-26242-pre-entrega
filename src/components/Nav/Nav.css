@@ -1,0 +1,29 @@
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-list a:hover {
+  color: rgba(249, 116, 6, 0.96);
+}
+
+/* --- Media Query para Pantallas Medianas y Grandes (Responsivo) --- */
+@media (min-width: 768px) {
+  .nav-list {
+    flex-direction: row;
+    gap: 25px;
+  }
+}

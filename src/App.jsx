@@ -6,7 +6,6 @@ import './App.css'
 
 function App() {
 
-
   return (
     <>
     <Header />
@@ -16,8 +15,6 @@ function App() {
       </Routes>
     </main>
     <Footer />
-
-      
     </>
   )
 }

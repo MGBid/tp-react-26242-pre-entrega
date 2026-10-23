@@ -11,9 +11,10 @@ function App() {
     <Header />
     <main>
       <Routes>
-        <Route path="/" element={<h1>Bienvvenida</h1>} />
+        <Route path="/" element={<h1>Bienvenida</h1>} />
       </Routes>
     </main>
+    <Footer />
 
       
     </>

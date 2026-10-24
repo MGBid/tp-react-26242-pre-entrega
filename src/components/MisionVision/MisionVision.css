@@ -1,0 +1,82 @@
+/* Contenedor principal de toda la página de Misión y Visión */
+.mision {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    color: var(--text);
+    font-family: sans-serif; /* O la tipografía que use tu proyecto */
+}
+
+/* Título principal "Misión & Visión" */
+.mision h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--text);
+    position: relative;
+}
+
+/* Detalle estético opcional: una línea naranja decorativa debajo del título principal */
+.mision h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #ff7300; /* El naranja que usamos en los hovers */
+    margin: 0.8rem auto 0 auto;
+    border-radius: 2px;
+}
+
+/* Contenedor que agrupa los bloques de texto. 
+   Por defecto en celulares se muestran uno abajo del otro. */
+.mision-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Tarjetas individuales para Misión y para Visión */
+.mision-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+    transition: transform 0.3s ease;
+    margin-top: 40px;
+}
+
+/* Pequeño efecto al pasar el mouse por las secciones */
+.mision-card:hover {
+    transform: translateY(-2px);
+}
+
+/* Subtítulos (Misión / Visión) */
+.mision h3 {
+    font-size: 1.6rem;
+    color: #ff7300; /* Usamos el naranja para destacar los conceptos clave */
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Párrafos con el texto descriptivo */
+.mision p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* --- Media Query para pantallas medianas y grandes (Computadoras) --- */
+@media (min-width: 768px) {
+    .mision-content-wrapper {
+        flex-direction: row; /* Coloca Misión a la izquierda y Visión a la derecha */
+    }
+    
+    .mision-card {
+        flex: 1; /* Hace que ambas tarjetas tengan exactamente el mismo ancho */
+    }
+}

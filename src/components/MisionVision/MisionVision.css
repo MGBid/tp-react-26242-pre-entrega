@@ -63,12 +63,14 @@
 }
 
 /* Párrafos con el texto descriptivo */
-.mision p {
-    font-size: 1.1rem;
+.mision-card p {
+    font-size: 1.3rem;
     line-height: 1.6;
     margin: 0;
     opacity: 0.9;
 }
+
+
 
 /* --- Media Query para pantallas medianas y grandes (Computadoras) --- */
 @media (min-width: 768px) {

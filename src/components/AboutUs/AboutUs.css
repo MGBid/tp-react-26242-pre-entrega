@@ -1,0 +1,42 @@
+.about-us {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    color: var(--text);
+    font-family: sans-serif; /* O la tipografía que use tu proyecto */
+}
+
+.about-us img {
+    margin: 32px;
+    width: 50%;
+    object-fit: cover;      /* Recorta la imagen proporcionalmente sin deformarla */
+    border-radius: 20px;
+    background-color: var(--border); 
+    transition: filter 0.2s ease; /* Transición suave para el brillo posterior */
+}
+
+.about-us h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--text);
+    position: relative;
+}
+
+.mision h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #ff7300; /* El naranja que usamos en los hovers */
+    margin: 0.8rem auto 0 auto;
+    border-radius: 2px;
+}
+
+.about-card p {
+    padding: 32px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+    opacity: 0.9;
+}

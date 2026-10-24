@@ -27,5 +27,6 @@ export const ItemListContainer = () => {
         <h1>Nuestro Staff</h1>
         <div className="divider"></div>
         <ItemList products={products} />
+        <div className="divider"></div>
     </section>
 }

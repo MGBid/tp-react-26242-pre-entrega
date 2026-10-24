@@ -2,8 +2,8 @@ import { Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header/Header';
 import { Footer } from './components/Footer/Footer';
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
-
-import './App.css'
+import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer';
+import './App.css';
 
 function App() {
 
@@ -14,8 +14,9 @@ function App() {
       <Routes>
         <Route path='/' element={<ItemListContainer />} />
         <Route path='/cart' element={<h1>Carrito</h1>} />
+        <Route path='/product/:id' element={<h1>Detalle Producto</h1>} />
         <Route path='/mision-vision' element={<h1>Misión & Visión</h1>} />
-        <Route path='/about-us' element={<h1>Quienes Somos</h1>} />
+        <Route path='/about-us' element={<ItemDetailContainer />} />
       </Routes>
     </main>
     <Footer />

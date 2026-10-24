@@ -1,7 +1,7 @@
 // import "./ItemDetail.css";
 import { Item } from "../Item/Item";
 
-export const ItemDetail = () => {
+export const ItemDetail = ({ item }) => {
     return (
         <div className="detail-wrapper">
             <Item {...item}>

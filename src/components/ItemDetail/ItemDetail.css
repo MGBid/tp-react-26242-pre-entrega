@@ -1,0 +1,140 @@
+/* ==========================================================================
+   1. CONTENEDOR PRINCIPAL (Centrado y control de ancho al 80%)
+   ========================================================================= */
+.detail-wrapper {
+    max-width: 1100px;         /* Limita el ancho máximo en pantallas grandes */
+    width: 80%;                /* Obliga a ocupar el 80% de la pantalla */
+    margin: 3rem auto;         /* Centra horizontalmente en la pantalla */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==========================================================================
+   2. REESTRUCTURACIÓN DE LA TARJETA
+   ========================================================================= */
+.detail-wrapper .card {
+    cursor: default;
+    transform: none !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15) !important;
+    border-color: var(--border) !important;
+    padding: 2.5rem;
+    width: 100%;               /* Asegura que use todo el ancho del wrapper */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;    /* Por defecto en celulares, todo va hacia abajo */
+    gap: 1.5rem;
+    text-align: left;          /* Corregimos el centrado para que se lea mejor de corrido */
+}
+
+/* Evitamos efectos de color naranja en el texto de la tarjeta al pasar el cursor */
+.detail-wrapper .card:hover {
+    transform: none !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15) !important;
+    border-color: var(--border) !important;
+}
+
+.detail-wrapper .card:hover h3,
+.detail-wrapper .card:hover p {
+    color: var(--text) !important;
+}
+
+/* Forzamos a que los textos y títulos de la tarjeta base se alineen a la izquierda */
+.detail-wrapper .card h3,
+.detail-wrapper .card p {
+    text-align: left;
+    margin: 0;
+}
+
+.detail-wrapper .card h3 {
+    font-size: 2rem;           /* Título del nombre más grande en el detalle */
+}
+
+.detail-wrapper .card p:nth-of-type(1) {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.detail-wrapper .card p:nth-of-type(2) {
+    font-size: 1.8rem;         /* Precio más destacado */
+    color: #ff7300;            /* El precio se queda naranja fijo */
+}
+
+/* ==========================================================================
+   3. RESPONSIVO: TRANSFORMACIÓN A DOS COLUMNAS (Pantallas grandes)
+   ========================================================================= */
+@media (min-width: 768px) {
+    .detail-wrapper .card {
+        display: grid;
+        grid-template-columns: 40% 60%; /* 40% para la foto y 60% para los datos */
+        gap: 3rem;
+        align-items: center;            /* Centra verticalmente los elementos */
+    }
+
+    .detail-wrapper .card img {
+        width: 100%;
+        height: auto;
+        max-height: 450px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    /* Agrupamos todos los textos (título, descripción, precio, info-plus y botón) 
+       para que se organicen de forma limpia en la columna derecha */
+    .detail-wrapper .card h3,
+    .detail-wrapper .card p,
+    .detail-wrapper .info-plus,
+    .detail-wrapper .btn {
+        grid-column: 2; /* Obliga a todos los elementos de texto a ir a la derecha */
+    }
+}
+
+/* ==========================================================================
+   4. ESTILOS DE LA INFORMACIÓN EXTENDIDA (info-plus)
+   ========================================================================= */
+.info-plus {
+    border-top: 1px dashed var(--border);
+    border-bottom: 1px dashed var(--border);
+    margin: 1rem 0;
+    padding: 1.2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 100%;
+}
+
+.info-plus p {
+    font-size: 1rem !important;
+    color: var(--text) !important;
+    line-height: 1.4;
+}
+
+.info-plus p strong {
+    color: #ff7300;
+    font-weight: 600;
+}
+
+/* ==========================================================================
+   5. BOTÓN DE ACCIÓN
+   ========================================================================= */
+.detail-wrapper .btn {
+    background-color: #ff7300;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    width: 100%;
+    max-width: 300px;          /* Evita que el botón sea gigante en computadoras */
+    text-align: center;
+}
+
+.detail-wrapper .btn:hover {
+    background-color: #e06500;
+}
+
+.detail-wrapper .btn:active {
+    transform: scale(0.98);
+}

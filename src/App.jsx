@@ -6,6 +6,7 @@ import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetail
 import { MisionVision } from './components/MisionVision/MisionVision';
 import { AboutUs } from './components/AboutUs/AboutUs';
 import './App.css';
+import { Cart } from './components/Cart/Cart';
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
     <main>
       <Routes>
         <Route path='/' element={<ItemListContainer />} />
-        <Route path='/cart' element={<h1>Carrito</h1>} />
+        <Route path='/cart' element={<Cart />} />
         <Route path='/product/:id' element={<ItemDetailContainer />} />
         <Route path='/mision-vision' element={<MisionVision />} />
         <Route path='/about-us' element={<AboutUs />} />

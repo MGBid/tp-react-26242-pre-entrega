@@ -1,6 +1,7 @@
 # 🚀 Live Demo
 
-You can check out the live version of the **Staffing Cats** app here: [https://tp-react-26242-pre-entrega.vercel.app/](URL)
+You can check out the live version of the **Staffing Cats** app here:
+ [Link to Staffing Cats](https://tp-react-26242-pre-entrega.vercel.app/)
 
 
 
